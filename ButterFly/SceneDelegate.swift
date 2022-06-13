@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ButterFly
 //
-//  Created by Milo on 13/06/2022.
+//  Created by Yan Wang on 13/06/2022.
 //
 
 import UIKit
