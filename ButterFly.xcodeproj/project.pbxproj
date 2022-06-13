@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		269CFE80285750EF005225AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE7F285750EF005225AF /* AppDelegate.swift */; };
+		269CFE82285750EF005225AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE81285750EF005225AF /* SceneDelegate.swift */; };
+		269CFE84285750EF005225AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE83285750EF005225AF /* ViewController.swift */; };
+		269CFE87285750EF005225AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269CFE85285750EF005225AF /* Main.storyboard */; };
+		269CFE8A285750EF005225AF /* ButterFly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */; };
+		269CFE8C285750F2005225AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269CFE8B285750F2005225AF /* Assets.xcassets */; };
+		269CFE8F285750F2005225AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269CFE8D285750F2005225AF /* LaunchScreen.storyboard */; };
+		269CFE9A285750F3005225AF /* ButterFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE99285750F3005225AF /* ButterFlyTests.swift */; };
+		269CFEA4285750F3005225AF /* ButterFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA3285750F3005225AF /* ButterFlyUITests.swift */; };
+		269CFEA6285750F3005225AF /* ButterFlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		269CFE96285750F3005225AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269CFE74285750EF005225AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269CFE7B285750EF005225AF;
+			remoteInfo = ButterFly;
+		};
+		269CFEA0285750F3005225AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269CFE74285750EF005225AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269CFE7B285750EF005225AF;
+			remoteInfo = ButterFly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		269CFE7C285750EF005225AF /* ButterFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		269CFE7F285750EF005225AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		269CFE81285750EF005225AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		269CFE83285750EF005225AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		269CFE86285750EF005225AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		269CFE89285750EF005225AF /* ButterFly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterFly.xcdatamodel; sourceTree = "<group>"; };
+		269CFE8B285750F2005225AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		269CFE8E285750F2005225AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		269CFE90285750F2005225AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269CFE95285750F3005225AF /* ButterFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269CFE99285750F3005225AF /* ButterFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyTests.swift; sourceTree = "<group>"; };
+		269CFE9F285750F3005225AF /* ButterFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		269CFEA3285750F3005225AF /* ButterFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITests.swift; sourceTree = "<group>"; };
+		269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		269CFE79285750EF005225AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE92285750F3005225AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE9C285750F3005225AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		269CFE73285750EF005225AF = {
+			isa = PBXGroup;
+			children = (
+				269CFE7E285750EF005225AF /* ButterFly */,
+				269CFE98285750F3005225AF /* ButterFlyTests */,
+				269CFEA2285750F3005225AF /* ButterFlyUITests */,
+				269CFE7D285750EF005225AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		269CFE7D285750EF005225AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				269CFE7C285750EF005225AF /* ButterFly.app */,
+				269CFE95285750F3005225AF /* ButterFlyTests.xctest */,
+				269CFE9F285750F3005225AF /* ButterFlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		269CFE7E285750EF005225AF /* ButterFly */ = {
+			isa = PBXGroup;
+			children = (
+				269CFE7F285750EF005225AF /* AppDelegate.swift */,
+				269CFE81285750EF005225AF /* SceneDelegate.swift */,
+				269CFE83285750EF005225AF /* ViewController.swift */,
+				269CFE85285750EF005225AF /* Main.storyboard */,
+				269CFE8B285750F2005225AF /* Assets.xcassets */,
+				269CFE8D285750F2005225AF /* LaunchScreen.storyboard */,
+				269CFE90285750F2005225AF /* Info.plist */,
+				269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */,
+			);
+			path = ButterFly;
+			sourceTree = "<group>";
+		};
+		269CFE98285750F3005225AF /* ButterFlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				269CFE99285750F3005225AF /* ButterFlyTests.swift */,
+			);
+			path = ButterFlyTests;
+			sourceTree = "<group>";
+		};
+		269CFEA2285750F3005225AF /* ButterFlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				269CFEA3285750F3005225AF /* ButterFlyUITests.swift */,
+				269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */,
+			);
+			path = ButterFlyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		269CFE7B285750EF005225AF /* ButterFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269CFEA9285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFly" */;
+			buildPhases = (
+				269CFE78285750EF005225AF /* Sources */,
+				269CFE79285750EF005225AF /* Frameworks */,
+				269CFE7A285750EF005225AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButterFly;
+			productName = ButterFly;
+			productReference = 269CFE7C285750EF005225AF /* ButterFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		269CFE94285750F3005225AF /* ButterFlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269CFEAC285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyTests" */;
+			buildPhases = (
+				269CFE91285750F3005225AF /* Sources */,
+				269CFE92285750F3005225AF /* Frameworks */,
+				269CFE93285750F3005225AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269CFE97285750F3005225AF /* PBXTargetDependency */,
+			);
+			name = ButterFlyTests;
+			productName = ButterFlyTests;
+			productReference = 269CFE95285750F3005225AF /* ButterFlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		269CFE9E285750F3005225AF /* ButterFlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 269CFEAF285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyUITests" */;
+			buildPhases = (
+				269CFE9B285750F3005225AF /* Sources */,
+				269CFE9C285750F3005225AF /* Frameworks */,
+				269CFE9D285750F3005225AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				269CFEA1285750F3005225AF /* PBXTargetDependency */,
+			);
+			name = ButterFlyUITests;
+			productName = ButterFlyUITests;
+			productReference = 269CFE9F285750F3005225AF /* ButterFlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		269CFE74285750EF005225AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					269CFE7B285750EF005225AF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					269CFE94285750F3005225AF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 269CFE7B285750EF005225AF;
+					};
+					269CFE9E285750F3005225AF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 269CFE7B285750EF005225AF;
+					};
+				};
+			};
+			buildConfigurationList = 269CFE77285750EF005225AF /* Build configuration list for PBXProject "ButterFly" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 269CFE73285750EF005225AF;
+			productRefGroup = 269CFE7D285750EF005225AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				269CFE7B285750EF005225AF /* ButterFly */,
+				269CFE94285750F3005225AF /* ButterFlyTests */,
+				269CFE9E285750F3005225AF /* ButterFlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		269CFE7A285750EF005225AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269CFE8F285750F2005225AF /* LaunchScreen.storyboard in Resources */,
+				269CFE8C285750F2005225AF /* Assets.xcassets in Resources */,
+				269CFE87285750EF005225AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE93285750F3005225AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE9D285750F3005225AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		269CFE78285750EF005225AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269CFE84285750EF005225AF /* ViewController.swift in Sources */,
+				269CFE80285750EF005225AF /* AppDelegate.swift in Sources */,
+				269CFE82285750EF005225AF /* SceneDelegate.swift in Sources */,
+				269CFE8A285750EF005225AF /* ButterFly.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE91285750F3005225AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269CFE9A285750F3005225AF /* ButterFlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		269CFE9B285750F3005225AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269CFEA6285750F3005225AF /* ButterFlyUITestsLaunchTests.swift in Sources */,
+				269CFEA4285750F3005225AF /* ButterFlyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		269CFE97285750F3005225AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269CFE7B285750EF005225AF /* ButterFly */;
+			targetProxy = 269CFE96285750F3005225AF /* PBXContainerItemProxy */;
+		};
+		269CFEA1285750F3005225AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 269CFE7B285750EF005225AF /* ButterFly */;
+			targetProxy = 269CFEA0285750F3005225AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		269CFE85285750EF005225AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269CFE86285750EF005225AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		269CFE8D285750F2005225AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269CFE8E285750F2005225AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		269CFEA7285750F3005225AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		269CFEA8285750F3005225AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		269CFEAA285750F3005225AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButterFly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		269CFEAB285750F3005225AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButterFly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		269CFEAD285750F3005225AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterFly.app/ButterFly";
+			};
+			name = Debug;
+		};
+		269CFEAE285750F3005225AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButterFly.app/ButterFly";
+			};
+			name = Release;
+		};
+		269CFEB0285750F3005225AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterFly;
+			};
+			name = Debug;
+		};
+		269CFEB1285750F3005225AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24F49GJGR4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButterFly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		269CFE77285750EF005225AF /* Build configuration list for PBXProject "ButterFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269CFEA7285750F3005225AF /* Debug */,
+				269CFEA8285750F3005225AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		269CFEA9285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269CFEAA285750F3005225AF /* Debug */,
+				269CFEAB285750F3005225AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		269CFEAC285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269CFEAD285750F3005225AF /* Debug */,
+				269CFEAE285750F3005225AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		269CFEAF285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269CFEB0285750F3005225AF /* Debug */,
+				269CFEB1285750F3005225AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				269CFE89285750EF005225AF /* ButterFly.xcdatamodel */,
+			);
+			currentVersion = 269CFE89285750EF005225AF /* ButterFly.xcdatamodel */;
+			path = ButterFly.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 269CFE74285750EF005225AF /* Project object */;
+}
