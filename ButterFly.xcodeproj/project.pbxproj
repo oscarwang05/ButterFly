@@ -17,6 +17,9 @@
 		269CFE9A285750F3005225AF /* ButterFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE99285750F3005225AF /* ButterFlyTests.swift */; };
 		269CFEA4285750F3005225AF /* ButterFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA3285750F3005225AF /* ButterFlyUITests.swift */; };
 		269CFEA6285750F3005225AF /* ButterFlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */; };
+		445402CF0360C93100F5D413 /* Pods_ButterFlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73713A606E89ED3CA31965C /* Pods_ButterFlyTests.framework */; };
+		721EBB0CE18D54E94CA56E82 /* Pods_ButterFly_ButterFlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F049C7C5E0F99A7F6C2C92 /* Pods_ButterFly_ButterFlyUITests.framework */; };
+		817997BB7DBE9B63502DB079 /* Pods_ButterFly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09761641C3670F52844A8E19 /* Pods_ButterFly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09761641C3670F52844A8E19 /* Pods_ButterFly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterFly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CFE7C285750EF005225AF /* ButterFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CFE7F285750EF005225AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		269CFE81285750EF005225AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		269CFE9F285750F3005225AF /* ButterFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CFEA3285750F3005225AF /* ButterFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITests.swift; sourceTree = "<group>"; };
 		269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B6F5B4A152606B2E53C682D /* Pods-ButterFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly.release.xcconfig"; path = "Target Support Files/Pods-ButterFly/Pods-ButterFly.release.xcconfig"; sourceTree = "<group>"; };
+		3FADD7305E3E167B4170E351 /* Pods-ButterFly-ButterFlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly-ButterFlyUITests.release.xcconfig"; path = "Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46152D816EE5A1A509B63D02 /* Pods-ButterFlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFlyTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterFlyTests/Pods-ButterFlyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7712C10A849B578EEB2BAB7C /* Pods-ButterFlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFlyTests.release.xcconfig"; path = "Target Support Files/Pods-ButterFlyTests/Pods-ButterFlyTests.release.xcconfig"; sourceTree = "<group>"; };
+		88F049C7C5E0F99A7F6C2C92 /* Pods_ButterFly_ButterFlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterFly_ButterFlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73713A606E89ED3CA31965C /* Pods_ButterFlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterFlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F3F1AA1D0AAEF9F0E60843 /* Pods-ButterFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly.debug.xcconfig"; path = "Target Support Files/Pods-ButterFly/Pods-ButterFly.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EA861AB694EB8303CDA2AD /* Pods-ButterFly-ButterFlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly-ButterFlyUITests.debug.xcconfig"; path = "Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817997BB7DBE9B63502DB079 /* Pods_ButterFly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445402CF0360C93100F5D413 /* Pods_ButterFlyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721EBB0CE18D54E94CA56E82 /* Pods_ButterFly_ButterFlyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				269CFE98285750F3005225AF /* ButterFlyTests */,
 				269CFEA2285750F3005225AF /* ButterFlyUITests */,
 				269CFE7D285750EF005225AF /* Products */,
+				D20C26E6B0642204A973B5D2 /* Pods */,
+				9D2E296AC35A5961A332E735 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,29 @@
 			path = ButterFlyUITests;
 			sourceTree = "<group>";
 		};
+		9D2E296AC35A5961A332E735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09761641C3670F52844A8E19 /* Pods_ButterFly.framework */,
+				88F049C7C5E0F99A7F6C2C92 /* Pods_ButterFly_ButterFlyUITests.framework */,
+				A73713A606E89ED3CA31965C /* Pods_ButterFlyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D20C26E6B0642204A973B5D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6F3F1AA1D0AAEF9F0E60843 /* Pods-ButterFly.debug.xcconfig */,
+				3B6F5B4A152606B2E53C682D /* Pods-ButterFly.release.xcconfig */,
+				F8EA861AB694EB8303CDA2AD /* Pods-ButterFly-ButterFlyUITests.debug.xcconfig */,
+				3FADD7305E3E167B4170E351 /* Pods-ButterFly-ButterFlyUITests.release.xcconfig */,
+				46152D816EE5A1A509B63D02 /* Pods-ButterFlyTests.debug.xcconfig */,
+				7712C10A849B578EEB2BAB7C /* Pods-ButterFlyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269CFEA9285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFly" */;
 			buildPhases = (
+				1503C3D1B8AD6E3268A31AEA /* [CP] Check Pods Manifest.lock */,
 				269CFE78285750EF005225AF /* Sources */,
 				269CFE79285750EF005225AF /* Frameworks */,
 				269CFE7A285750EF005225AF /* Resources */,
+				F41012553C0E4A6376486FE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269CFEAC285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyTests" */;
 			buildPhases = (
+				41245905264C5F21ABF1FDD2 /* [CP] Check Pods Manifest.lock */,
 				269CFE91285750F3005225AF /* Sources */,
 				269CFE92285750F3005225AF /* Frameworks */,
 				269CFE93285750F3005225AF /* Resources */,
@@ -172,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269CFEAF285750F3005225AF /* Build configuration list for PBXNativeTarget "ButterFlyUITests" */;
 			buildPhases = (
+				5B63D511989F64A0D1163522 /* [CP] Check Pods Manifest.lock */,
 				269CFE9B285750F3005225AF /* Sources */,
 				269CFE9C285750F3005225AF /* Frameworks */,
 				269CFE9D285750F3005225AF /* Resources */,
+				955DEECCAB289FA018172984 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1503C3D1B8AD6E3268A31AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterFly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41245905264C5F21ABF1FDD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterFlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B63D511989F64A0D1163522 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterFly-ButterFlyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		955DEECCAB289FA018172984 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41012553C0E4A6376486FE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterFly/Pods-ButterFly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterFly/Pods-ButterFly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterFly/Pods-ButterFly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		269CFE78285750EF005225AF /* Sources */ = {
@@ -436,6 +584,7 @@
 		};
 		269CFEAA285750F3005225AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F3F1AA1D0AAEF9F0E60843 /* Pods-ButterFly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,7 +603,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFly;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.Butterfly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,6 +613,7 @@
 		};
 		269CFEAB285750F3005225AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6F5B4A152606B2E53C682D /* Pods-ButterFly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,7 +632,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yan.ButterFly;
+				PRODUCT_BUNDLE_IDENTIFIER = yan.Butterfly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -492,6 +642,7 @@
 		};
 		269CFEAD285750F3005225AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46152D816EE5A1A509B63D02 /* Pods-ButterFlyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +663,7 @@
 		};
 		269CFEAE285750F3005225AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7712C10A849B578EEB2BAB7C /* Pods-ButterFlyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +684,7 @@
 		};
 		269CFEB0285750F3005225AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EA861AB694EB8303CDA2AD /* Pods-ButterFly-ButterFlyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +703,7 @@
 		};
 		269CFEB1285750F3005225AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FADD7305E3E167B4170E351 /* Pods-ButterFly-ButterFlyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
