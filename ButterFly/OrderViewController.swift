@@ -34,6 +34,7 @@ class OrderViewController: UIViewController {
     func navigationBarSetup() {
         let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPurchaseOrder))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
         
     }
     

@@ -35,6 +35,8 @@ class DetailViewController : UIViewController {
     func navigationBarSetup() {
         let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewItems))
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
+        self.navigationItem.title = "Order \(order_id!) Detail"
     }
     
     @objc func addNewItems() {
@@ -57,41 +59,95 @@ class DetailViewController : UIViewController {
             let itemIDTextField = self.alert!.textFields![0]
             let quantityTextField = self.alert!.textFields![1]
             
-            if (itemIDTextField.text?.count == 0 || itemIDTextField.text?.count == 0 ) {
-                action.isEnabled = false
-            }
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSS'Z'"
             
             if self.order!.purchased_items!.contains(where: {item in
-                (item as! Item).item_id == Int64(itemIDTextField.text!)!
+                if ((item as! Item).item_id == Int64(itemIDTextField.text!)!) {
+                    let actionSheet = UIAlertController(title: "", message: "There is an entry with the same item id, would you like to replace it or merge it?", preferredStyle: .actionSheet)
+                    let confirmAction = UIAlertAction(title: "Replace", style: .destructive) { _ in
+                        let newItem = Item(context: self.detailView!.dataManager.context!)
+                        
+                        newItem.item_id = (Int64(itemIDTextField.text!))!
+                        newItem.quantity = (Int64(quantityTextField.text!))!
+                        newItem.order = self.order
+                        
+                        self.order?.last_updated = dateFormatter.string(from: Date())
+                        newItem.last_updated = dateFormatter.string(from: Date())
+                        
+                        self.order?.addToPurchased_items(newItem)
+                        
+                        do {
+                            try self.detailView?.dataManager.context!.save()
+                        }
+                        catch {
+                            #if DEBUG
+                            print(error.localizedDescription)
+                            #endif
+                        }
+                        self.detailView?.reloadData()
+                    }
+                    
+                    let mergeButton = UIAlertAction(title: "Merge", style: .default) { _ in
+                        let newItem = Item(context: self.detailView!.dataManager.context!)
+                        
+                        newItem.item_id = (Int64(itemIDTextField.text!))!
+                        newItem.quantity = (Int64(quantityTextField.text!))! + (item as! Item).quantity
+                        newItem.order = self.order
+                        
+                        self.order?.last_updated = dateFormatter.string(from: Date())
+                        newItem.last_updated = dateFormatter.string(from: Date())
+                        
+                        self.order?.addToPurchased_items(newItem)
+                        
+                        do {
+                            try self.detailView?.dataManager.context!.save()
+                        }
+                        catch {
+                            #if DEBUG
+                            print(error.localizedDescription)
+                            #endif
+                        }
+                        self.detailView?.reloadData()
+                    }
+                    
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+                    
+                    actionSheet.addAction(confirmAction)
+                    actionSheet.addAction(mergeButton)
+                    actionSheet.addAction(cancelAction)
+                    
+                    self.present(actionSheet, animated: true)
+                }
+                
+                return (item as! Item).item_id == Int64(itemIDTextField.text!)!
             }) {
                 
             }
             else {
+                let newItem = Item(context: self.detailView!.dataManager.context!)
                 
+                newItem.item_id = (Int64(itemIDTextField.text!))!
+                newItem.quantity = (Int64(quantityTextField.text!))!
+                newItem.order = self.order
+
+                self.order?.last_updated = dateFormatter.string(from: Date())
+                newItem.last_updated = dateFormatter.string(from: Date())
+                
+                self.order?.addToPurchased_items(newItem)
+                
+                do {
+                    try self.detailView?.dataManager.context!.save()
+                }
+                catch {
+                    #if DEBUG
+                    print(error.localizedDescription)
+                    #endif
+                }
+                self.detailView?.reloadData()
             }
             
-            let newItem = Item(context: self.detailView!.dataManager.context!)
             
-            newItem.item_id = (Int64(itemIDTextField.text!))!
-            newItem.quantity = (Int64(quantityTextField.text!))!
-            newItem.order = self.order
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSS'Z'"
-            self.order?.last_updated = dateFormatter.string(from: Date())
-            newItem.last_updated = dateFormatter.string(from: Date())
-            
-            self.order?.addToPurchased_items(newItem)
-            
-            do {
-                try self.detailView?.dataManager.context!.save()
-            }
-            catch {
-                #if DEBUG
-                print(error.localizedDescription)
-                #endif
-            }
-            self.detailView?.reloadData()
         }
         submitButton.isEnabled = false
         self.alert!.addAction(submitButton)
