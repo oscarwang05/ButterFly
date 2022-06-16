@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		269CFE80285750EF005225AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE7F285750EF005225AF /* AppDelegate.swift */; };
 		269CFE82285750EF005225AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE81285750EF005225AF /* SceneDelegate.swift */; };
-		269CFE84285750EF005225AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE83285750EF005225AF /* ViewController.swift */; };
+		269CFE84285750EF005225AF /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE83285750EF005225AF /* OrderViewController.swift */; };
 		269CFE87285750EF005225AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269CFE85285750EF005225AF /* Main.storyboard */; };
 		269CFE8A285750EF005225AF /* ButterFly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */; };
 		269CFE8C285750F2005225AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269CFE8B285750F2005225AF /* Assets.xcassets */; };
@@ -17,6 +17,12 @@
 		269CFE9A285750F3005225AF /* ButterFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFE99285750F3005225AF /* ButterFlyTests.swift */; };
 		269CFEA4285750F3005225AF /* ButterFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA3285750F3005225AF /* ButterFlyUITests.swift */; };
 		269CFEA6285750F3005225AF /* ButterFlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */; };
+		26D38F78285829580079E6BF /* TypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D38F77285829580079E6BF /* TypeExtension.swift */; };
+		26E79C2C2858DA220027065D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E79C2B2858DA220027065D /* DetailView.swift */; };
+		26E79C33285A0F8C0027065D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E79C32285A0F8C0027065D /* DataManager.swift */; };
+		26E79C3B285B21860027065D /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E79C38285B21860027065D /* Item+CoreDataClass.swift */; };
+		26E82C99285876F100E5327D /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E82C98285876F100E5327D /* OrderView.swift */; };
+		26E82CA128589EBC00E5327D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E82CA028589EBC00E5327D /* DetailViewController.swift */; };
 		445402CF0360C93100F5D413 /* Pods_ButterFlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73713A606E89ED3CA31965C /* Pods_ButterFlyTests.framework */; };
 		721EBB0CE18D54E94CA56E82 /* Pods_ButterFly_ButterFlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F049C7C5E0F99A7F6C2C92 /* Pods_ButterFly_ButterFlyUITests.framework */; };
 		817997BB7DBE9B63502DB079 /* Pods_ButterFly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09761641C3670F52844A8E19 /* Pods_ButterFly.framework */; };
@@ -44,7 +50,7 @@
 		269CFE7C285750EF005225AF /* ButterFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CFE7F285750EF005225AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		269CFE81285750EF005225AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		269CFE83285750EF005225AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		269CFE83285750EF005225AF /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		269CFE86285750EF005225AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		269CFE89285750EF005225AF /* ButterFly.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterFly.xcdatamodel; sourceTree = "<group>"; };
 		269CFE8B285750F2005225AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +61,12 @@
 		269CFE9F285750F3005225AF /* ButterFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CFEA3285750F3005225AF /* ButterFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITests.swift; sourceTree = "<group>"; };
 		269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterFlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26D38F77285829580079E6BF /* TypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeExtension.swift; sourceTree = "<group>"; };
+		26E79C2B2858DA220027065D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		26E79C32285A0F8C0027065D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		26E79C38285B21860027065D /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "/Users/milo/Projects/ButterFly/ButterFly/Model/Item+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		26E82C98285876F100E5327D /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		26E82CA028589EBC00E5327D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3B6F5B4A152606B2E53C682D /* Pods-ButterFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly.release.xcconfig"; path = "Target Support Files/Pods-ButterFly/Pods-ButterFly.release.xcconfig"; sourceTree = "<group>"; };
 		3FADD7305E3E167B4170E351 /* Pods-ButterFly-ButterFlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFly-ButterFlyUITests.release.xcconfig"; path = "Target Support Files/Pods-ButterFly-ButterFlyUITests/Pods-ButterFly-ButterFlyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		46152D816EE5A1A509B63D02 /* Pods-ButterFlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterFlyTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterFlyTests/Pods-ButterFlyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,14 +130,16 @@
 		269CFE7E285750EF005225AF /* ButterFly */ = {
 			isa = PBXGroup;
 			children = (
-				269CFE7F285750EF005225AF /* AppDelegate.swift */,
+				26E82C9E28587A6C00E5327D /* Common */,
+				26E82C9C2858798800E5327D /* Model */,
+				26E82C9D2858799900E5327D /* View */,
+				26E82C9F28587A7D00E5327D /* Storyboards */,
 				269CFE81285750EF005225AF /* SceneDelegate.swift */,
-				269CFE83285750EF005225AF /* ViewController.swift */,
-				269CFE85285750EF005225AF /* Main.storyboard */,
+				269CFE7F285750EF005225AF /* AppDelegate.swift */,
+				26E82CA028589EBC00E5327D /* DetailViewController.swift */,
+				269CFE83285750EF005225AF /* OrderViewController.swift */,
 				269CFE8B285750F2005225AF /* Assets.xcassets */,
-				269CFE8D285750F2005225AF /* LaunchScreen.storyboard */,
 				269CFE90285750F2005225AF /* Info.plist */,
-				269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */,
 			);
 			path = ButterFly;
 			sourceTree = "<group>";
@@ -145,6 +159,42 @@
 				269CFEA5285750F3005225AF /* ButterFlyUITestsLaunchTests.swift */,
 			);
 			path = ButterFlyUITests;
+			sourceTree = "<group>";
+		};
+		26E82C9C2858798800E5327D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26E79C38285B21860027065D /* Item+CoreDataClass.swift */,
+				269CFE88285750EF005225AF /* ButterFly.xcdatamodeld */,
+				26E79C32285A0F8C0027065D /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26E82C9D2858799900E5327D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26E82C98285876F100E5327D /* OrderView.swift */,
+				26E79C2B2858DA220027065D /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26E82C9E28587A6C00E5327D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				26D38F77285829580079E6BF /* TypeExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		26E82C9F28587A7D00E5327D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				269CFE85285750EF005225AF /* Main.storyboard */,
+				269CFE8D285750F2005225AF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		9D2E296AC35A5961A332E735 /* Frameworks */ = {
@@ -409,10 +459,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269CFE84285750EF005225AF /* ViewController.swift in Sources */,
+				269CFE84285750EF005225AF /* OrderViewController.swift in Sources */,
+				26E79C2C2858DA220027065D /* DetailView.swift in Sources */,
 				269CFE80285750EF005225AF /* AppDelegate.swift in Sources */,
+				26D38F78285829580079E6BF /* TypeExtension.swift in Sources */,
+				26E79C3B285B21860027065D /* Item+CoreDataClass.swift in Sources */,
+				26E82C99285876F100E5327D /* OrderView.swift in Sources */,
 				269CFE82285750EF005225AF /* SceneDelegate.swift in Sources */,
 				269CFE8A285750EF005225AF /* ButterFly.xcdatamodeld in Sources */,
+				26E79C33285A0F8C0027065D /* DataManager.swift in Sources */,
+				26E82CA128589EBC00E5327D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +654,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,6 +684,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

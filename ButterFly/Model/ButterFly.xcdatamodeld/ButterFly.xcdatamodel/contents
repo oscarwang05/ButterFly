@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Invoice" representedClassName="Invoice" syncable="YES" codeGenerationType="class">
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="invoice_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="invoice_number" optional="YES" attributeType="String"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="received_status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="invoice" inverseEntity="PurchaseOrder"/>
+        <relationship name="receipts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receipt" inverseName="invoice" inverseEntity="Receipt"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="invoice_id"/>
+                <constraint value="order"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="category">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="item_id" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="purchased_items" inverseEntity="PurchaseOrder"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="item_id"/>
+                <constraint value="order"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="PurchaseOrder" representedClassName="PurchaseOrder" syncable="YES" codeGenerationType="class">
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="order_id" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="purchase_order_number" optional="YES" attributeType="String"/>
+        <attribute name="supplier_id" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="invoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="order" inverseEntity="Invoice"/>
+        <relationship name="purchased_items" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Item" inverseName="order" inverseEntity="Item"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="order_id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Receipt" representedClassName="Receipt" syncable="YES" codeGenerationType="class">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="receipt_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="received_quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sent_date" optional="YES" attributeType="String"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="String"/>
+        <relationship name="invoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="receipts" inverseEntity="Invoice"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="receipt_id"/>
+                <constraint value="invoice"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Invoice" positionX="-54" positionY="54" width="128" height="149"/>
+        <element name="Item" positionX="-63" positionY="9" width="128" height="149"/>
+        <element name="PurchaseOrder" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Receipt" positionX="-36" positionY="63" width="128" height="179"/>
+    </elements>
+</model>
